@@ -10,11 +10,11 @@ const useSetSingleJob = (jobId) => {
     const fetchSingleJob = async () => {
       if (!jobId) return;
 
-      console.log("API CALLING 👉 http://localhost:8000/api/v1/job/get/" + jobId);
+
 
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/job/get/${jobId}`,
+          `https://jobpotal-673b.onrender.com/api/v1/job/get/${jobId}`,
           { withCredentials: true }
         );
 
