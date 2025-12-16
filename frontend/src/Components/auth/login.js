@@ -30,7 +30,7 @@ function Login() {
       dispatch(setLoading(true));
 
       const res = await axios.post(
-        "http://localhost:8000/api/v1/user/login",
+        "https://jobpotal-673b.onrender.com/api/v1/user/login",
         {
           fullname: users.fullname,
           email: users.email,
