@@ -1,0 +1,174 @@
+/* ===== Main Container ===== */
+.profile_cnt {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Profile Header ===== */
+.profile_mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 15px;
+}
+
+/* Left Section */
+.profile_midleft {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Profile Image */
+.profile_img img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+/* Name & Description */
+.prfile_imgright h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.prfile_imgright p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Edit Icon */
+.profilemidright svg {
+  font-size: 22px;
+  cursor: pointer;
+  color: #444;
+}
+
+/* ===== Contact Info ===== */
+.email_icon,
+.contact_icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #444;
+}
+
+.email_icon svg,
+.contact_icon svg {
+  font-size: 18px;
+}
+
+/* ===== Skills ===== */
+.skill_cnt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skil_btns{
+   padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.skils_btn button {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* ===== Resume ===== */
+.profile_resume {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile_resume label {
+  font-weight: bold;
+}
+
+.profile_resume a {
+  text-decoration: none;
+  color: #0b5ed7;
+  font-weight: 500;
+}
+
+/* ===== Applied Jobs ===== */
+.allaplied_job {
+  margin-top: 30px;
+}
+
+/* ===========================
+   📱 Mobile Responsive
+   =========================== */
+@media (max-width: 768px) {
+
+  .profile_mid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile_midleft {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile_img img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .prfile_imgright h2 {
+    font-size: 18px;
+  }
+
+  .email_icon,
+  .contact_icon {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .skill_cnt {
+    gap: 8px;
+  }
+
+  .profile_resume {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ===========================
+   📱 Small Mobile
+   =========================== */
+@media (max-width: 480px) {
+
+  .profile_cnt {
+    padding: 15px;
+  }
+
+  .skils_btn button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,173 @@
+/* =====================
+   CONTAINER
+===================== */
+.company_cnt {
+  padding: 16px;
+}
+
+.company_mid {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =====================
+   FILTER SECTION
+===================== */
+.filter_section {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter_section input,
+.filter_section select {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.filter_section input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter_section select {
+  min-width: 160px;
+}
+
+.filter_section button {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter_section button:hover {
+  background-color: #1d4ed8;
+}
+
+/* =====================
+   TABLE
+===================== */
+.table_wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.company_table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.company_table thead {
+  background-color: #f3f4f6;
+}
+
+.company_table th,
+.company_table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.company_logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* =====================
+   ACTION MENU
+===================== */
+.action_cell {
+  position: relative;
+}
+
+.three_dots {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.action_menu {
+  position: absolute;
+  right: 0;
+  top: 28px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 120px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.action_item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action_item:hover {
+  background-color: #f3f4f6;
+}
+
+/* =====================
+   NO DATA
+===================== */
+.no_data {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
+
+/* =====================
+   TABLET (≤ 768px)
+===================== */
+@media (max-width: 768px) {
+  .filter_section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter_section input,
+  .filter_section select,
+  .filter_section button {
+    width: 100%;
+  }
+
+  .company_table th,
+  .company_table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+/* =====================
+   MOBILE (≤ 480px)
+===================== */
+@media (max-width: 480px) {
+  .company_logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .company_table th:nth-child(3),
+  .company_table td:nth-child(3) {
+    display: none; /* hide Created Date on mobile */
+  }
+
+  .action_menu {
+    width: 100px;
+  }
+}

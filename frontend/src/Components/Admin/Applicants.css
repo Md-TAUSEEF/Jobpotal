@@ -1,0 +1,130 @@
+/* ========== Container ========== */
+.applicants_cnt {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #f9fafb;
+}
+
+/* ========== Header ========== */
+.applicants_mid h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* ========== Table Wrapper ========== */
+.applicants_footer {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto; /* important for mobile */
+}
+
+/* ========== Table ========== */
+.applicants_table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px; /* allows horizontal scroll on small screens */
+}
+
+.applicants_table thead {
+  background: #f1f5f9;
+}
+
+.applicants_table th,
+.applicants_table td {
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.applicants_table th {
+  font-weight: 600;
+  color: #374151;
+}
+
+.applicants_table td {
+  color: #4b5563;
+}
+
+/* ========== Action Dropdown ========== */
+.applicant_pop {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  width: 130px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.applicant_row1 {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.applicant_row1:hover {
+  background: #f3f4f6;
+}
+
+.applicant_row1 p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ========== Footer Text ========== */
+.applicants_tablehead {
+  margin-top: 16px;
+}
+
+.applicants_tablehead h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* ========== Tablet (≤ 768px) ========== */
+@media (max-width: 768px) {
+  .applicants_mid h3 {
+    font-size: 18px;
+  }
+
+  .applicants_table th,
+  .applicants_table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .applicant_pop {
+    width: 120px;
+  }
+}
+
+/* ========== Mobile (≤ 480px) ========== */
+@media (max-width: 480px) {
+  .applicants_mid h3 {
+    font-size: 16px;
+  }
+
+  .applicants_footer {
+    padding: 8px;
+  }
+
+  .applicants_table {
+    min-width: 600px; /* ensures scroll instead of breaking layout */
+  }
+
+  .applicant_row1 p {
+    font-size: 13px;
+  }
+
+  .applicants_tablehead h1 {
+    font-size: 14px;
+    text-align: center;
+  }
+}

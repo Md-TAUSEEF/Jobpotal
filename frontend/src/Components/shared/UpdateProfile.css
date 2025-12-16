@@ -1,0 +1,71 @@
+.update_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.update_modal {
+  background: #fff;
+  width: 420px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.update_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close_icon {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.update_form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.update_form input,
+.update_form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.update_form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.update_form button {
+  background: #4f46e5;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.update_form button:hover {
+  background: #4338ca;
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+  .update_modal {
+    width: 90%;
+  }
+}

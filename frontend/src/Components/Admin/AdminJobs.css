@@ -1,0 +1,184 @@
+/* =======================
+   Admin Container
+======================= */
+.admin_cnt {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.admin_mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* =======================
+   Filter Section
+======================= */
+.filter_section {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.filter_section input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.filter_section button {
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter_section button:hover {
+  background-color: #1e40af;
+}
+
+/* =======================
+   Heading
+======================= */
+.admin_cnt h2 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #222;
+}
+
+/* =======================
+   Table Wrapper
+======================= */
+.table_wrapper {
+  max-width: 1200px;
+  margin: auto;
+  overflow-x: auto; /* 🔥 mobile scroll */
+  padding: 0 20px 20px;
+}
+
+/* =======================
+   Table
+======================= */
+.company_table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.company_table th,
+.company_table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.company_table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* =======================
+   Action Column
+======================= */
+.action_cell {
+  position: relative;
+  cursor: pointer;
+}
+
+.action_cell svg {
+  font-size: 18px;
+}
+
+/* Dropdown menu */
+.action_menu {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  width: 120px;
+  z-index: 10;
+}
+
+.action_item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.action_item:hover {
+  background-color: #f3f4f6;
+}
+
+/* =======================
+   Empty State
+======================= */
+.company_table td[colspan] {
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* =======================
+   Tablet (≤ 768px)
+======================= */
+@media (max-width: 768px) {
+  .filter_section {
+    flex-direction: column;
+  }
+
+  .filter_section button {
+    width: 100%;
+  }
+
+  .company_table {
+    min-width: 600px;
+  }
+
+  .admin_cnt h2 {
+    font-size: 18px;
+  }
+}
+
+/* =======================
+   Mobile (≤ 480px)
+======================= */
+@media (max-width: 480px) {
+  .admin_cnt {
+    padding: 15px;
+  }
+
+  .table_wrapper {
+    padding: 0 15px 15px;
+  }
+
+  .company_table {
+    min-width: 520px; /* horizontal scroll */
+  }
+
+  .company_table th,
+  .company_table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .action_menu {
+    right: -10px;
+  }
+}

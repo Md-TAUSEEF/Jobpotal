@@ -1,0 +1,116 @@
+/* Main Container */
+.createcmp_cnt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Inner Box */
+.create_mid {
+  width: 100%;
+  max-width: 550px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.create_head {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.create_head h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.create_head p {
+  color: #777;
+  font-size: 15px;
+}
+
+/* Form Section */
+.createcmp_mid form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.createcmp_mid label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.createcmp_mid input {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.createcmp_mid input:focus {
+  border-color: #0066ff;
+  outline: none;
+}
+
+/* Buttons */
+.companycreate_btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.companycreate_btn button {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.create_btn {
+  background: #007bff;
+}
+
+.create_btn:hover {
+  background: #005fcc;
+}
+
+.continue_btn {
+  background: #28a745;
+}
+
+.continue_btn:hover {
+  background: #1f8736;
+}
+
+/* 📱 Responsive for Mobile */
+@media (max-width: 600px) {
+  .create_mid {
+    padding: 18px;
+  }
+
+  .create_head h2 {
+    font-size: 22px;
+  }
+
+  .create_head p {
+    font-size: 14px;
+  }
+
+  .companycreate_btn {
+    flex-direction: column;
+  }
+
+  .companycreate_btn button {
+    width: 100%;
+  }
+}

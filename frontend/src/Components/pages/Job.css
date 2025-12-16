@@ -1,0 +1,170 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.job_cnt {
+  width: 100%;
+  max-width: 420px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.job_mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job_left p {
+  font-size: 14px;
+  color: #777;
+}
+
+.job_save {
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+.job_save:hover {
+  color: #0a65cc;
+}
+
+
+.job_mid2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.job_mid2 img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.job_mid22 h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.job_mid22 p {
+  font-size: 14px;
+  color: #777;
+}
+
+
+.job_ftr h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.job_ftr p {
+  font-size: 14px;
+  color: #555;
+}
+
+.job_tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.tag.blue {
+  background: #e6f0ff;
+  color: #0a65cc;
+}
+
+.tag.red {
+  background: #ffe6e6;
+  color: #cc0000;
+}
+
+.tag.purple {
+  background: #f0e6ff;
+  color: #6a1bcc;
+}
+
+/* ===== Buttons ===== */
+.job_actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.job_actions button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.job_actions button:first-child {
+  background: #0a65cc;
+  color: white;
+}
+
+.job_actions button:last-child {
+  background: #f2f2f2;
+  color: #333;
+}
+
+.job_actions button:hover {
+  opacity: 0.9;
+}
+
+
+.job_cnt:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .job_cnt {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .job_mid2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job_actions {
+    flex-direction: column;
+  }
+
+  .job_ftr h1 {
+    font-size: 16px;
+  }
+
+  .job_actions button {
+    font-size: 13px;
+  }
+}

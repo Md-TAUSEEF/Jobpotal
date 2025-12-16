@@ -1,0 +1,109 @@
+/* ===== Container ===== */
+.Applied_Job {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f9fafb;
+}
+
+/* ===== Table ===== */
+.Applied_Job table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ===== Table Header ===== */
+.Applied_Job thead {
+  background: #1f2937;
+  color: #ffffff;
+}
+
+.Applied_Job th,
+.Applied_Job td {
+  padding: 14px 14px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ===== Row Hover ===== */
+.Applied_Job tbody tr:hover {
+  background: #f3f4f6;
+}
+
+/* ===== Status Column ===== */
+.status_job {
+  text-align: center;
+}
+
+/* ===== Status Colors ===== */
+.status_accepted {
+  color: #16a34a;
+  font-weight: 600;
+  background: #dcfce7;
+  padding: 6px 12px;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+.status_pending {
+  color: #dc2626;
+  font-weight: 600;
+  background: #fee2e2;
+  padding: 6px 12px;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+/* Optional (if rejected later) */
+.status_rejected {
+  color: #991b1b;
+  font-weight: 600;
+  background: #fecaca;
+  padding: 2px 12px;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+/* ===== Responsive (Mobile) ===== */
+@media (max-width: 768px) {
+  .Applied_Job table,
+  .Applied_Job thead,
+  .Applied_Job tbody,
+  .Applied_Job th,
+  .Applied_Job td,
+  .Applied_Job tr {
+    display: block;
+    width: 100%;
+  }
+
+  .Applied_Job thead {
+    display: none;
+  }
+
+  .Applied_Job tr {
+    margin-bottom: 16px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .Applied_Job td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .Applied_Job td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #374151;
+  }
+}

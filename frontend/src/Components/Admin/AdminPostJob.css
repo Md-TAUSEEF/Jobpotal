@@ -1,0 +1,90 @@
+/* Main container */
+.postjob_cnt {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.postjob_cnt h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Form */
+.postjob_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Inputs & Select */
+.postjob_form input,
+.postjob_form select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Full width inputs */
+.postjob_form input[name="description"],
+.postjob_form input[name="requirements"],
+.postjob_form input[name="companyId"],
+.postjob_form select {
+  grid-column: span 2;
+}
+
+/* Focus effect */
+.postjob_form input:focus,
+.postjob_form select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.15);
+}
+
+/* Submit button */
+.postjob_form button {
+  grid-column: span 2;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Button hover */
+.postjob_form button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+/* Button active */
+.postjob_form button:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .postjob_form {
+    grid-template-columns: 1fr;
+  }
+
+  .postjob_form input,
+  .postjob_form select,
+  .postjob_form button {
+    grid-column: span 1;
+  }
+}

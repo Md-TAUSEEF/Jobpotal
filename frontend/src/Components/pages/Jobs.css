@@ -1,0 +1,90 @@
+/* ✅ Mobile filter button */
+.mobile_filter_btn {
+  display: none;
+  padding: 10px;
+}
+
+.mobile_filter_btn button {
+  padding: 8px 14px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* ✅ Desktop Layout */
+.Jobs_cnt {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+}
+
+.Jobs_cntleft {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  width: 260px;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  background: #fff;
+  z-index: 1000;
+}
+
+.Jobs_cntright {
+  margin-left: 300px;
+  width: calc(100% - 320px);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+/* ✅ Close button */
+.close_btn {
+  display: none;
+}
+
+/* ✅ MOBILE RESPONSIVE */
+@media (max-width: 1024px) {
+  .mobile_filter_btn {
+    display: block;
+  }
+
+  .Jobs_cnt {
+    display: block;
+  }
+
+  /* Filter hidden by default */
+  .Jobs_cntleft {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    transition: left 0.3s ease;
+    z-index: 2000;
+  }
+
+  .Jobs_cntleft.open {
+    left: 0;
+  }
+
+  .close_btn {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .Jobs_cntright {
+    margin-left: 0;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .Jobs_cntright {
+    grid-template-columns: 1fr;
+  }
+}

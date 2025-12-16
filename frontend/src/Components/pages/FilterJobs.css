@@ -1,0 +1,78 @@
+.filter_cnt {
+  width: 100%;
+  max-width: 280px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.filter_cnt h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filter_cnt hr {
+  border: none;
+  height: 1px;
+  background: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+
+.filter_data {
+  margin-bottom: 20px;
+}
+
+.filter_data h2 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.filter_value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+}
+
+.filter_value input[type="radio"] {
+  accent-color: #0a65cc;
+  cursor: pointer;
+}
+
+
+.filter_value:hover {
+  color: #0a65cc;
+}
+
+
+
+@media (max-width: 768px) {
+  .filter_cnt {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter_cnt {
+    padding: 14px;
+  }
+
+  .filter_cnt h1 {
+    font-size: 16px;
+  }
+
+  .filter_data h2 {
+    font-size: 14px;
+  }
+
+  .filter_value {
+    font-size: 13px;
+  }
+}
