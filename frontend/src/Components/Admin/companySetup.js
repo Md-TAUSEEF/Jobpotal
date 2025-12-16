@@ -27,7 +27,7 @@ function CompanySetup() {
       
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/company/get/${companyId}`,
+          `https://jobpotal-673b.onrender.com/api/v1/company/get/${companyId}`,
           { withCredentials: true }
         );
 
