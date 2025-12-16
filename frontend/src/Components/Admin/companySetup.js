@@ -80,7 +80,7 @@ function CompanySetup() {
 
     try {
       const res = await axios.put(
-        `http://localhost:8000/api/v1/company/update/${companyId}`,
+        `https://jobpotal-673b.onrender.com/api/v1/company/update/${companyId}`,
         formData,
         { withCredentials: true }
       );
