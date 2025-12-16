@@ -12,7 +12,7 @@ const UseAdminAllJob = () => {
       try {
         console.log("Fetching admin jobs..."); // ✅ debug
         const res = await axios.get(
-          "http://localhost:8000/api/v1/job/getadminjob",
+          "https://jobpotal-673b.onrender.com/api/v1/job/getadminjob",
           { withCredentials: true }
         );
 
