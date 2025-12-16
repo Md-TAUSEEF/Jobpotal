@@ -21,7 +21,7 @@ function Applicants() {
   const statusHandler = async (status, applicationId) => {
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/application/status/${applicationId}/update`,
+        `https://jobpotal-673b.onrender.com/api/v1/application/status/${applicationId}/update`,
         { status },
         { withCredentials: true }
       );
