@@ -19,7 +19,7 @@ function Companycreate() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/api/v1/company/register",
+        "https://jobpotal-673b.onrender.com/api/v1/company/register",
         { companyName },
         {
           headers: {
