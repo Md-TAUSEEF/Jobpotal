@@ -31,7 +31,7 @@ function JobDetailed() {
   const applyHandler = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/application/apply/${id}`,
+        `https://jobpotal-673b.onrender.com/api/v1/application/apply/${id}`,
         {
           title: singleJob.title,
           description: singleJob.description,
